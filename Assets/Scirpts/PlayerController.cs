@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
         {
             rb2D.linearVelocityX = speed;
         }
-        if (Input.GetKeyDown(KeyCode.Space) && rb2D.linearVelocityY == 0f)
+        if (Input.GetKeyDown(KeyCode.Space) && rb2D.linearVelocityY == 0f) // Definatly the right way to check if object is not in air :)
         {
             rb2D.AddForce(new Vector2(0f, 300f));
         }
